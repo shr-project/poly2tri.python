@@ -1,7 +1,7 @@
-#!/usr/bin/env python2.6
+#!/usr/bin/env python3
 
 import sys
-from time import clock
+from time import perf_counter
 
 from p2t import *
 
@@ -50,7 +50,7 @@ def main(file_name, translate, zoom):
         polyline.append(Point(p[0],p[1]))
 
     # initialize clock
-    t0 = clock()
+    t0 = perf_counter()
    
     ##
     ## Step 1: Initialize
@@ -87,7 +87,7 @@ def main(file_name, translate, zoom):
     ##
     triangles = cdt.triangulate()
     
-    print ("Elapsed time (ms) = " + str(clock()*1000.0))
+    print ("Elapsed time (ms) = " + str(perf_counter()*1000.0))
         
     # The Main Event Loop
     done = False
