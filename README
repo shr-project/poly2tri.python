@@ -27,19 +27,19 @@ On Windows, follow the instructions here to set up your environment:
 http://rexdouglass.com/python-64-bit-on-windows-part-2-building-packages/
 
 Then to create a wheel package, run the following command:
-python setup.py bdist_wheel
+python3 setup.py bdist_wheel
 This will create a .whl package in dist/ directory which can then be redistributed.
 
 On Linux, you can do:
-python setup.py build_ext -i
+python3 setup.py build_ext -i
 
 ----------------------------------------------
 Running the Examples
 ----------------------------------------------
 
-python test.py <filename> <translate-x> <translate-y> <zoom>
+python3 test.py <filename> <translate-x> <translate-y> <zoom>
 
 Examples:
 
-  python test.py data/dude.dat 100 -200 1
-  python test.py data/nazca_monkey.dat 400 300 4.5
+  python3 test.py data/dude.dat 100 -200 1
+  python3 test.py data/nazca_monkey.dat 400 300 4.5
